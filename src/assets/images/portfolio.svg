@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="1019" viewBox="0 0 1366 1019">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="1009" height="725" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="portfolio" transform="translate(0 -2042)">
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="1366" height="1019" transform="translate(0 2042)" fill="#fff"/>
+    <text id="Some_of_my_work" data-name="Some of my work" transform="translate(584 2118)" fill="#707070" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Some of my work</tspan></text>
+    <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(182 2174)" clip-path="url(#clip-path)">
+      <g transform="translate(-140 -2238)">
+        <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(140 2238)" fill="none" stroke="#0006a0" stroke-width="1">
+          <rect width="301" height="725" stroke="none"/>
+          <rect x="0.5" y="0.5" width="300" height="724" fill="none"/>
+        </g>
+      </g>
+      <g transform="translate(211 -2238)">
+        <g id="Rectangle_10-2" data-name="Rectangle 10" transform="translate(140 2238)" fill="none" stroke="#0006a0" stroke-width="1">
+          <rect width="301" height="725" stroke="none"/>
+          <rect x="0.5" y="0.5" width="300" height="724" fill="none"/>
+        </g>
+      </g>
+      <g transform="translate(562 -2238)">
+        <g id="Rectangle_10-3" data-name="Rectangle 10" transform="translate(140 2238)" fill="none" stroke="#0006a0" stroke-width="1">
+          <rect width="301" height="725" stroke="none"/>
+          <rect x="0.5" y="0.5" width="300" height="724" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="more" transform="translate(1005.087 2950.859)">
+      <text id="View_all_works" data-name="View all works" transform="translate(-0.087 19.141)" fill="#707070" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">View all works</tspan></text>
+      <g id="Forward_arrow" data-name="Forward arrow" transform="translate(122)">
+        <path id="Path_10" data-name="Path 10" d="M-12.641,0l-2.3,2.3,8.7,8.7-31.824.243v3.041H-6.239l-8.7,8.7,2.3,2.3L0,12.641Z" transform="translate(38.062)" fill="#0006a0"/>
+      </g>
+    </g>
+  </g>
+</svg>

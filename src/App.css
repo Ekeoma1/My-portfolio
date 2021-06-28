@@ -1,38 +1,326 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --body-text: #333333;
+  --pri-bg: #f4efe8;
+  --pri-color: #edc559;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pri-color {
+  color: var(--pri-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-size: 14px !important;
+}
+
+h1 {
+  font-size: 32px !important;
+}
+
+h2 {
+  font-size: 28px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+}
+
+h4 {
+  font-size: 20px !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.pri-btn {
+  padding: 12px 17px;
+  border: 1px solid var(--body-text);
+  border-radius: 5px;
+  color: var(--body-text);
+}
+
+.pri-btn:hover {
+  color: #fff;
+  background-color: var(--pri-color);
+  border: none;
+}
+
+.pri-alt-btn {
+  padding: 12px 17px;
+  background-color: var(--pri-color);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.pri-alt-btn:hover {
+  color: var(--body-text);
+}
+
+/* button:focus {
+  box-shadow: 0 0 0 4px rgb(237, 197, 89, 0.5);
+} */
+
+nav {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--pri-bg);
+}
+
+.menu-item > li > a {
+  color: var(--body-text) !important;
+  text-decoration: none;
+}
+
+.menu-item > li > a:hover {
+  color: var(--pri-color) !important;
+}
+
+.hero-box {
+  width: 100%;
+  height: 670px;
+  background-color: var(--pri-bg);
+  box-sizing: border-box;
+}
+
+.hero-pic-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 683px;
+  height: 670px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-pic-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.54);
+  display: flex;
+  align-items: center;
+}
+
+.desktop-hero-details {
+  padding-right: 14%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desktop-hero-details {
+    padding-right: 8%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* About Section */
+
+.about-section {
+  padding: 50px 0;
+}
+
+.skill-box-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .skill-box-wrapper {
+    grid-template-columns: auto auto !important;
+  }
+}
+
+.skill-box {
+  width: 130px;
+  height: 130px;
+  border: 1px solid var(--pri-color);
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* services section */
+.services-section {
+  padding: 50px 0;
+  width: 100%;
+  background-color: var(--pri-bg);
+  overflow: hidden;
+}
+
+.service-card-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .service-card-wrapper {
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+  }
+
+  .service-card {
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service-card-wrapper {
+    grid-template-columns: auto !important;
+  }
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  /* width: 100%;
+  max-width: 291px;
+  height: 339px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: auto; */
+}
+
+/* portfolio section */
+
+.portfolio-section {
+  padding: 50px 0;
+}
+
+.portfolio-card {
+  width: 100%;
+  max-width: 350px;
+  height: 500px;
+  /* background-color: red; */
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+  background-size: cover;
+  position: relative;
+}
+
+.portfolio-card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* contact */
+
+.contact-section {
+  width: 100%;
+  padding-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.call-to-action {
+  background-color: var(--pri-bg);
+  padding: 30px 60px 60px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.call-to-action-content {
+  max-width: 520px;
+  margin-top: 25px;
+}
+
+.call-to-action-content .action-title {
+  color: var(--body-text);
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.call-to-action .line {
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+.call-to-action-content .line li:nth-of-type(1) {
+  width: 64px;
+}
+
+.call-to-action-content .line li {
+  display: inline-block;
+  background-color: var(--pri-color);
+  border-radius: 50px;
+  height: 3px;
+}
+
+.call-to-action-content .line li:nth-of-type(3) {
+  width: 7px;
+}
+
+.call-to-action-btn {
+  margin-top: 30px;
+}
+
+/* footer */
+footer {
+  background-color: #222;
+  padding-top: 25px;
+}
+
+/* .footer-desc {
+  max-width: 520px;
+  margin: auto;
+} */
+
+/* .footer-social-wrapper {
+  margin: 20px 0;
+} */
+
+.footer-social {
+  margin: 0 10px;
+}
+
+.footer-social:hover {
+  color: var(--pri-color);
+}
+
+.footer-mail {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-mail:hover {
+  color: var(--pri-color);
+}
+
+.copyright-bar {
+  background-color: black;
+  padding: 5px 0;
+}
+
+.copyright-bar a {
+  color: #fff;
+}
+
+.copyright-bar a:hover {
+  color: var(--pri-color);
 }
