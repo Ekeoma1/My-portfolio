@@ -36,9 +36,9 @@ class Portfolio extends React.Component {
               loop
               autoplay
               // margin={2}
-              // nav={true}
+              nav={true}
               // center={true}
-              // dots
+              dots={true}
               responsive={this.state.responsive}
             >
               <div className="item">
