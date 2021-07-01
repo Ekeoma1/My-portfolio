@@ -11,24 +11,24 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col-md">
-            <img className="mb-3 mb-md-2" src={FooterLogo} alt="" />
+          <div className="col-lg">
+            <img className="mb-3 mb-lg-2" src={FooterLogo} alt="" />
           </div>
 
-          <div className="col-md">
-            <div className="mb-3 mb-md-0">
+          <div className="col-lg">
+            <div className="mb-3 mb-lg-0">
               <a className="footer-mail" href="mailto:ekeigwee@gmail.com">
                 ekeigwee@gmail.com
               </a>
             </div>
           </div>
 
-          <div className="col-md">
-            <p className="footer-mail mb-3 mb-md-0">+2348147016112</p>
+          <div className="col-lg">
+            <p className="footer-mail mb-3 mb-lg-0">+2348147016112</p>
           </div>
 
-          <div className="col-md ">
-            <div className="mb-3 mb-md-0">
+          <div className="col-lg ">
+            <div className="mb-3 mb-lg-0">
               <a href="https://github.com/Ekeoma1">
                 <GitHubIcon className="footer-social" htmlColor="white" />
               </a>

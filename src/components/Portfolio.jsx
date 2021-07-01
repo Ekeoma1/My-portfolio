@@ -17,7 +17,7 @@ class Portfolio extends React.Component {
       },
 
       768: {
-        items: 2,
+        items: 1,
       },
 
       1366: {
@@ -33,7 +33,7 @@ class Portfolio extends React.Component {
 
           <div>
             <OwlCarousel
-              className="mt-3"
+              className="owl-theme mt-3"
               loop
               autoplay
               margin={2}

@@ -79,6 +79,26 @@ nav {
   background-color: var(--pri-bg);
 }
 
+.mobile-nav {
+  width: 210px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--pri-bg);
+  padding: 50px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.mobile-nav a {
+  color: var(--body-text);
+}
+
+.mobile-nav a:hover {
+  color: var(--pri-color);
+}
+
 .menu-item > li > a {
   color: var(--body-text) !important;
   text-decoration: none;
@@ -286,20 +306,12 @@ footer {
   padding-top: 25px;
 }
 
-/* .footer-desc {
-  max-width: 520px;
-  margin: auto;
-} */
-
-/* .footer-social-wrapper {
-  margin: 20px 0;
-} */
-
 .footer-social {
-  margin: 0 10px;
+  margin: 0 0 0 10px;
 }
 
-.footer-social:hover {
+.footer-social:hover,
+.mobile-nav-social:hover {
   color: var(--pri-color);
 }
 

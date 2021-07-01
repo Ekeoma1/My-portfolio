@@ -1,9 +1,33 @@
 import React, { useRef } from "react";
 import Logo from "../assets/images/logo.png";
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   const navBtn = useRef();
+  const closeNavBtn = useRef();
+  const mobileNavMenu = useRef();
+
+  const showMobileNav = () => {
+    // shows the mobile menu
+    mobileNavMenu.current.classList.remove("d-none");
+    mobileNavMenu.current.classList.add("d-sm-block");
+
+    // removes the nav btn and show close btn
+    navBtn.current.classList.add("d-none");
+    closeNavBtn.current.classList.remove("d-none");
+  };
+
+  const hideMobileNav = () => {
+    // hide the mobile menu
+    mobileNavMenu.current.classList.add("d-none");
+    mobileNavMenu.current.classList.remove("d-sm-block");
+
+    // show the nav btn and hide close btn
+    navBtn.current.classList.remove("d-none");
+    closeNavBtn.current.classList.add("d-none");
+  };
   return (
     <nav>
       <div className="container">
@@ -22,12 +46,29 @@ const Navbar = () => {
           <li className="d-md-inline d-none">
             <a href="#">Reach Me</a>
           </li>
-          <li className="d-sm-inline d-md-none">
-            <button>
+          <li className="d-sm-inline d-md-none d-sm-block">
+            <button ref={navBtn} onClick={showMobileNav}>
               <MenuIcon />
+            </button>
+
+            <button
+              ref={closeNavBtn}
+              className="d-none"
+              onClick={hideMobileNav}
+            >
+              <CloseIcon />
             </button>
           </li>
         </ul>
+      </div>
+
+      {/* mobile nav */}
+
+      <div
+        ref={mobileNavMenu}
+        className="mobile-nav d-md-none d-none animate__animated animate__fadeInLeft"
+      >
+        <MobileNav />
       </div>
     </nav>
   );

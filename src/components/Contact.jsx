@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="contact-section">
       <div className="container">
-        <div className="call-to-action d-md-flex justify-content-between align-items-center">
+        <div className="call-to-action d-lg-flex justify-content-between align-items-center">
           <div className="call-to-action-content">
             <h5 className="action-title">have any project in mind?</h5>
             {/* <ul className="line">
