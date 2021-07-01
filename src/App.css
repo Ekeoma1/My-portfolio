@@ -99,6 +99,12 @@ nav {
   color: var(--pri-color);
 }
 
+.mobile-nav-close-btn {
+  position: absolute;
+  top: 2%;
+  right: 6%;
+}
+
 .menu-item > li > a {
   color: var(--body-text) !important;
   text-decoration: none;

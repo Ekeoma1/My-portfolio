@@ -11,16 +11,16 @@ const MobileNav = () => {
     <div>
       <ul className="list-unstyled float-start">
         <li className="pb-3">
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li className="pb-3">
-          <a href="#">Services</a>
+          <a href="#services">Services</a>
         </li>
         <li className="pb-3">
-          <a href="#">Works</a>
+          <a href="#works">Works</a>
         </li>
         <li className="pb-3">
-          <a href="#">Reach Me</a>
+          <a href="#contact">Reach Me</a>
         </li>
       </ul>
 

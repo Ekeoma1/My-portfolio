@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="contact-section">
+    <div id="contact" className="contact-section">
       <div className="container">
         <div className="call-to-action d-lg-flex justify-content-between align-items-center">
           <div className="call-to-action-content">

@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="container">
         <h2 className="text-center">About Me</h2>
 
@@ -21,8 +21,8 @@ const About = () => {
                 I specialize in building the front end of web applications and
                 ensuring that they are responsive across all devices. I'm always
                 exicted about working on projects, especially projects that are
-                new to me because it pushes me out of my comfort and it enables
-                me learn more.
+                new to me because it pushes me out of my comfort zone and it
+                enables me learn more.
               </p>
 
               <p>

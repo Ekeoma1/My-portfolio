@@ -8,7 +8,7 @@ const Services = () => {
   //   Aos.init({ duration: 2000 });
   // }, []);
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <div className="container">
         <div className="text-center text-capitalize">
           <h2>Services</h2>

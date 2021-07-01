@@ -35,28 +35,20 @@ const Navbar = () => {
 
         <ul className="list-unstyled menu-item float-end m-0 mt-1">
           <li className="d-md-inline d-none pe-4">
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li className="d-md-inline d-none pe-4">
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li className="d-md-inline d-none pe-4">
-            <a href="#">Works</a>
+            <a href="#works">Works</a>
           </li>
           <li className="d-md-inline d-none">
-            <a href="#">Reach Me</a>
+            <a href="#contact">Reach Me</a>
           </li>
           <li className="d-sm-inline d-md-none d-sm-block">
             <button ref={navBtn} onClick={showMobileNav}>
               <MenuIcon />
-            </button>
-
-            <button
-              ref={closeNavBtn}
-              className="d-none"
-              onClick={hideMobileNav}
-            >
-              <CloseIcon />
             </button>
           </li>
         </ul>
@@ -68,6 +60,14 @@ const Navbar = () => {
         ref={mobileNavMenu}
         className="mobile-nav d-md-none d-none animate__animated animate__fadeInLeft"
       >
+        <button
+          ref={closeNavBtn}
+          className="d-none mobile-nav-close-btn"
+          onClick={hideMobileNav}
+        >
+          <CloseIcon />
+        </button>
+
         <MobileNav />
       </div>
     </nav>

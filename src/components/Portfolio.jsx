@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
   };
   render() {
     return (
-      <section className="portfolio-section">
+      <section id="works" className="portfolio-section">
         <div className="container">
           <h2 className="text-center mb-5">Some Of My Works</h2>
 
