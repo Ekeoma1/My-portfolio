@@ -77,6 +77,8 @@ nav {
   width: 100%;
   padding: 10px 0;
   background-color: var(--pri-bg);
+  position: fixed;
+  z-index: 10;
 }
 
 .mobile-nav {
