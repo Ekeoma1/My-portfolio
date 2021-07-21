@@ -25,6 +25,7 @@ const Herobox = () => {
                   <div className="mt-5">
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       className="pri-alt-btn"
                       href="https://1drv.ms/w/s!AsHSgBVNCv-HgkebZz7R9WPE81bh"
                     >
@@ -51,6 +52,7 @@ const Herobox = () => {
               <div className="mt-5">
                 <a
                   className="pri-btn"
+                  rel="noreferrer"
                   target="_blank"
                   href="https://1drv.ms/w/s!AsHSgBVNCv-HgkebZz7R9WPE81bh"
                 >

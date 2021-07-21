@@ -3,7 +3,7 @@ import React from 'react'
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import 'animate.css/animate.min.css'
-// import 'aos/dist/aos.css'
+import 'aos/dist/aos.css'
 
 import Navbar from './components/Navbar';
 import Herobox from './components/Herobox'

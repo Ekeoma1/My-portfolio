@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import Icon from "./Icon";
 import Tilt from "react-parallax-tilt";
-// import Aos from "aos";
+import Aos from "aos";
 
 const Services = () => {
-  // useEffect(() => {
-  //   Aos.init({ duration: 2000 });
-  // }, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section id="services" className="services-section">
       <div className="container">

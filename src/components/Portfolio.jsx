@@ -52,6 +52,7 @@ class Portfolio extends React.Component {
                       className="pri-btn"
                       href="https://dwallit.herokuapp.com"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       view site
                     </a>
@@ -70,6 +71,7 @@ class Portfolio extends React.Component {
                       className="pri-btn"
                       href="https://dungada.com"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       view site
                     </a>
@@ -88,6 +90,7 @@ class Portfolio extends React.Component {
                       className="pri-alt-btn"
                       href="https://github.com/Temitope0610/Sterlingbank-clone"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       view code
                     </a>
@@ -106,6 +109,7 @@ class Portfolio extends React.Component {
                       className="pri-btn me-3"
                       href="https://ekeigwee.netlify.app/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       view site
                     </a>
@@ -114,6 +118,7 @@ class Portfolio extends React.Component {
                       className="pri-alt-btn"
                       href="https://github.com/Ekeoma1/My-portfolio"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       view code
                     </a>
