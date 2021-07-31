@@ -13,8 +13,7 @@ const About = () => {
             <div>
               <p>
                 I'm Eke Igwe Eke a front end developer based in Lagos, Nigeria
-                with a B.Sc in public administration from Madonna University,
-                who started coding in 2019.
+                with a B.Sc in public administration from Madonna University.
               </p>
 
               <p>
