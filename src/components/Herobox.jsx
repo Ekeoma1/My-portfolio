@@ -27,10 +27,10 @@ const Herobox = () => {
                       target="_blank"
                       rel="noreferrer"
                       className="pri-alt-btn"
-                      href="https://1drv.ms/w/s!AsHSgBVNCv-HgkebZz7R9WPE81bh"
+                      href="https://eke-igwe-resume.netlify.app/"
                     >
                       <PlayForWorkIcon className="animate__animated animate__slideInDown" />
-                      download my CV
+                      View my CV
                     </a>
                   </div>
                 </div>
@@ -54,10 +54,10 @@ const Herobox = () => {
                   className="pri-btn"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://1drv.ms/w/s!AsHSgBVNCv-HgkebZz7R9WPE81bh"
+                  href="https://eke-igwe-resume.netlify.app/"
                 >
                   <PlayForWorkIcon className="animate__animated animate__slideInDown" />
-                  download my CV
+                  View My CV
                 </a>
               </div>
             </div>
