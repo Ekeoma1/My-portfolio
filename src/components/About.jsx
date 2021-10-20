@@ -19,9 +19,9 @@ const About = () => {
               <p>
                 I specialize in building the front end of web applications and
                 ensuring that they are responsive across all devices. I'm always
-                exicted about working on projects, especially projects that are
+                excited about working on projects, especially projects that are
                 new to me because it pushes me out of my comfort zone and it
-                enables me learn more.
+                enables me to learn more.
               </p>
 
               <p>
