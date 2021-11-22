@@ -3,10 +3,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-// portfolio links
+// portfolio images
 import Akpego from "../assets/images/akpego.png";
 import Dungada from "../assets/images/dungada.png";
-import Sterling from "../assets/images/sterling.png";
+import SendFreight from "../assets/images/sendfreight.jpg";
 import PortfolioPic from "../assets/images/portfolio.png";
 
 class Portfolio extends React.Component {
@@ -82,21 +82,30 @@ class Portfolio extends React.Component {
 
               <div className="item">
                 <div
-                  style={{ backgroundImage: `url(${Sterling})` }}
+                  style={{ backgroundImage: `url(${SendFreight})` }}
                   className="portfolio-card"
                 >
                   <div className="portfolio-card-overlay">
                     <a
-                      className="pri-alt-btn"
-                      href="https://github.com/Temitope0610/Sterlingbank-clone"
+                      className="pri-alt-btn me-2"
+                      href="https://github.com/Ekeoma1/sendFreight"
                       target="_blank"
                       rel="noreferrer"
                     >
                       view code
                     </a>
+
+                    <a
+                      className="pri-btn"
+                      href="https://keen-nightingale-c16e99.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      view site
+                    </a>
                   </div>
                 </div>
-                <h4 className="text-center">Sterling bank Clone</h4>
+                <h4 className="text-center">Send Freight Dashboard</h4>
               </div>
 
               <div className="item">

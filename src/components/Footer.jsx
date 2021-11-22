@@ -24,10 +24,12 @@ const Footer = () => {
           </div>
 
           <div className="col-lg">
-            <p className="footer-mail mb-3 mb-lg-0">+2348147016112</p>
+            <a href="tel:+2348147016112" className="footer-mail mb-3 mb-lg-0">
+              +2348147016112
+            </a>
           </div>
 
-          <div className="col-lg ">
+          <div className="col-lg">
             <div className="mb-3 mb-lg-0">
               <a href="https://github.com/Ekeoma1">
                 <GitHubIcon className="footer-social" htmlColor="white" />
