@@ -12,7 +12,7 @@ const Services = () => {
       <div className="container">
         <div className="text-center text-capitalize">
           <h2>Services</h2>
-          <p>what i offer</p>
+          <p className="pri-color">What I Offer</p>
         </div>
         <div className="service-card-wrapper mt-5">
           <Tilt>

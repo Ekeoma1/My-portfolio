@@ -8,6 +8,7 @@ import Akpego from "../assets/images/akpego.png";
 import Dungada from "../assets/images/dungada.png";
 import SendFreight from "../assets/images/sendfreight.jpg";
 import PortfolioPic from "../assets/images/portfolio.png";
+import ZumarocPic from "../assets/images/zumaroc.png";
 
 class Portfolio extends React.Component {
   state = {
@@ -59,6 +60,25 @@ class Portfolio extends React.Component {
                   </div>
                 </div>
                 <h4 className="text-center">Akpego(FINTECH)</h4>
+              </div>
+
+              <div className="item">
+                <div
+                  style={{ backgroundImage: `url(${ZumarocPic})` }}
+                  className="portfolio-card"
+                >
+                  <div className="portfolio-card-overlay">
+                    <a
+                      className="pri-btn"
+                      href="https://zumaroc.netlify.app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      view site
+                    </a>
+                  </div>
+                </div>
+                <h4 className="text-center">Zumaroc Website</h4>
               </div>
 
               <div className="item">
