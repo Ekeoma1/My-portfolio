@@ -69,10 +69,6 @@ button {
   color: var(--body-text);
 }
 
-/* button:focus {
-  box-shadow: 0 0 0 4px rgb(237, 197, 89, 0.5);
-} */
-
 nav {
   width: 100%;
   padding: 10px 0;

@@ -1,166 +1,117 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 // portfolio images
 import Akpego from "../assets/images/akpego.png";
-import Dungada from "../assets/images/dungada.png";
+import EBike from "../assets/images/ebike.png";
 import SendFreight from "../assets/images/sendfreight.jpg";
-import PortfolioPic from "../assets/images/portfolio.png";
 import ZumarocPic from "../assets/images/zumaroc.png";
+import weatherPic from "../assets/images/weather.png";
 
-class Portfolio extends React.Component {
-  state = {
-    responsive: {
-      0: {
-        items: 1,
-      },
+const portfolioDetails = [
+  {
+    image: Akpego,
+    name: "Rabbah (Fintech)",
+    siteLink: "https://dwallit.herokuapp.com",
+    githubLink: "https://github.com/nerdyeye/dwallit",
+  },
+  {
+    image: ZumarocPic,
+    name: "Zumaroc Website",
+    siteLink: "https://zumaroc.netlify.app",
+    githubLink: "https://github.com/Ekeoma1/Zumaroc",
+  },
+  {
+    image: SendFreight,
+    name: "Send Freight Dashboard",
+    siteLink: "https://keen-nightingale-c16e99.netlify.app/",
+    githubLink: "https://github.com/Ekeoma1/sendFreight",
+  },
 
-      768: {
-        items: 1,
-      },
+  {
+    image: EBike,
+    name: "eBike Landing Page",
+    siteLink: "https://amazing-poincare-dd5401.netlify.app/",
+    githubLink: "https://github.com/Ekeoma1/eBike",
+  },
 
-      1366: {
-        items: 3,
-      },
-    },
-  };
-  render() {
-    return (
-      <section id="works" className="portfolio-section">
-        <div className="container">
-          <h2 className="text-center mb-5">Some Of My Works</h2>
+  {
+    image: weatherPic,
+    name: "weather forcast app",
+    siteLink: "https://objective-davinci-7b251d.netlify.app/",
+    githubLink: "https://github.com/Ekeoma1/simple-weather-app",
+  },
+];
 
-          <div>
-            <OwlCarousel
-              className="owl-theme mt-3"
-              loop
-              autoplay
-              margin={2}
-              nav={true}
-              // center={true}
-              dots={true}
-              responsive={this.state.responsive}
-            >
-              <div className="item">
-                <div
-                  style={{ backgroundImage: `url(${Akpego})` }}
-                  className="portfolio-card"
-                >
-                  <div className="portfolio-card-overlay">
-                    <a
-                      className="pri-btn"
-                      href="https://dwallit.herokuapp.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      view site
-                    </a>
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 3,
+    partialVisibilityGutter: 30,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    partialVisibilityGutter: 30,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    partialVisibilityGutter: 30,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    partialVisibilityGutter: 10,
+  },
+};
+
+const Portfolio = () => {
+  return (
+    <section id="works" className="portfolio-section">
+      <div className="container">
+        <h2 className="text-center mb-5">Some Of My Works</h2>
+
+        <div>
+          <Carousel responsive={responsive}>
+            {portfolioDetails.map((val, index) => {
+              return (
+                <div key={index}>
+                  <div
+                    style={{ backgroundImage: `url(${val.image})` }}
+                    className="portfolio-card"
+                  >
+                    <div className="portfolio-card-overlay">
+                      <a
+                        className="pri-alt-btn me-2"
+                        href={val.githubLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        view code
+                      </a>
+
+                      <a
+                        className="pri-btn"
+                        href={val.siteLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        view site
+                      </a>
+                    </div>
                   </div>
+                  <h4 className="text-center">{val.name}</h4>
                 </div>
-                <h4 className="text-center">Akpego(FINTECH)</h4>
-              </div>
-
-              <div className="item">
-                <div
-                  style={{ backgroundImage: `url(${ZumarocPic})` }}
-                  className="portfolio-card"
-                >
-                  <div className="portfolio-card-overlay">
-                    <a
-                      className="pri-btn"
-                      href="https://zumaroc.netlify.app"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      view site
-                    </a>
-                  </div>
-                </div>
-                <h4 className="text-center">Zumaroc Website</h4>
-              </div>
-
-              <div className="item">
-                <div
-                  style={{ backgroundImage: `url(${Dungada})` }}
-                  className="portfolio-card"
-                >
-                  <div className="portfolio-card-overlay">
-                    <a
-                      className="pri-btn"
-                      href="https://dungada.com"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      view site
-                    </a>
-                  </div>
-                </div>
-                <h4 className="text-center">Dungada Website</h4>
-              </div>
-
-              <div className="item">
-                <div
-                  style={{ backgroundImage: `url(${SendFreight})` }}
-                  className="portfolio-card"
-                >
-                  <div className="portfolio-card-overlay">
-                    <a
-                      className="pri-alt-btn me-2"
-                      href="https://github.com/Ekeoma1/sendFreight"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      view code
-                    </a>
-
-                    <a
-                      className="pri-btn"
-                      href="https://keen-nightingale-c16e99.netlify.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      view site
-                    </a>
-                  </div>
-                </div>
-                <h4 className="text-center">Send Freight Dashboard</h4>
-              </div>
-
-              <div className="item">
-                <div
-                  style={{ backgroundImage: `url(${PortfolioPic})` }}
-                  className="portfolio-card"
-                >
-                  <div className="portfolio-card-overlay">
-                    <a
-                      className="pri-btn me-3"
-                      href="https://ekeigwee.netlify.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      view site
-                    </a>
-
-                    <a
-                      className="pri-alt-btn"
-                      href="https://github.com/Ekeoma1/My-portfolio"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      view code
-                    </a>
-                  </div>
-                </div>
-                <h4 className="text-center">One Page Portfolio</h4>
-              </div>
-            </OwlCarousel>
-          </div>
+              );
+            })}
+          </Carousel>
         </div>
-      </section>
-    );
-  }
-}
+      </div>
+    </section>
+  );
+};
 
 export default Portfolio;
