@@ -46,7 +46,7 @@ const portfolioDetails = [
 
   {
     image: LandingLight,
-    name: "Payment Landing pagr",
+    name: "Payment Landing page",
     siteLink: "https://eke-landing-light.netlify.app/",
     githubLink: "https://github.com/Ekeoma1/landingLight",
   },
