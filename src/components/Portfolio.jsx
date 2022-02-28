@@ -8,6 +8,7 @@ import EBike from "../assets/images/ebike.png";
 import SendFreight from "../assets/images/sendfreight.jpg";
 import ZumarocPic from "../assets/images/zumaroc.png";
 import weatherPic from "../assets/images/weather.png";
+import LandingLight from "./../assets/images/landing-light.png";
 
 const portfolioDetails = [
   {
@@ -41,6 +42,13 @@ const portfolioDetails = [
     name: "weather forcast app",
     siteLink: "https://objective-davinci-7b251d.netlify.app/",
     githubLink: "https://github.com/Ekeoma1/simple-weather-app",
+  },
+
+  {
+    image: LandingLight,
+    name: "Payment Landing pagr",
+    siteLink: "https://eke-landing-light.netlify.app/",
+    githubLink: "https://github.com/Ekeoma1/landingLight",
   },
 ];
 
@@ -94,7 +102,7 @@ const Portfolio = () => {
                       </a>
 
                       <a
-                        className="pri-btn"
+                        className="sec-btn"
                         href={val.siteLink}
                         target="_blank"
                         rel="noreferrer"
