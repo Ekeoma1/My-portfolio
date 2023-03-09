@@ -7,10 +7,7 @@ const Herobox = () => {
     <div className="hero-box">
       <div className="row p-0 m-0 align-items-center">
         <div className="col p-0">
-          <div
-            style={{ backgroundImage: `url(${HeroBg})` }}
-            className="hero-pic-wrapper"
-          >
+          <div style={{ backgroundImage: `url(${HeroBg})` }} className="hero-pic-wrapper">
             <div className="hero-pic-overlay">
               <div className="container">
                 {/* mobile hero details */}
@@ -27,7 +24,7 @@ const Herobox = () => {
                       target="_blank"
                       rel="noreferrer"
                       className="pri-alt-btn"
-                      href="https://1drv.ms/w/s!AsHSgBVNCv-HgyunsRx0F6xRt5rP?e=47vgyn"
+                      href="https://drive.google.com/file/d/138xV9t58Iq-ISMpjyD4XIOQDeMKjVg0c/view"
                     >
                       <PlayForWorkIcon className="animate__animated animate__slideInDown" />
                       View my CV
@@ -50,12 +47,7 @@ const Herobox = () => {
               <h1 className="mb-0">eke igwe eke</h1>
 
               <div className="mt-5">
-                <a
-                  className="pri-btn"
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://1drv.ms/w/s!AsHSgBVNCv-HgyunsRx0F6xRt5rP?e=47vgyn"
-                >
+                <a className="pri-btn" rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/138xV9t58Iq-ISMpjyD4XIOQDeMKjVg0c/view">
                   <PlayForWorkIcon className="animate__animated animate__slideInDown" />
                   View My CV
                 </a>

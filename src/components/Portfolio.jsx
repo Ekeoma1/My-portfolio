@@ -9,6 +9,7 @@ import SendFreight from "../assets/images/sendfreight.jpg";
 import ZumarocPic from "../assets/images/zumaroc.png";
 import weatherPic from "../assets/images/weather.png";
 import LandingLight from "./../assets/images/landing-light.png";
+import MinPay from "./../assets/images/1minutepay.png";
 
 const portfolioDetails = [
   {
@@ -16,6 +17,13 @@ const portfolioDetails = [
     name: "Rabbah (Fintech)",
     siteLink: "https://dwallit.herokuapp.com",
     githubLink: "https://github.com/nerdyeye/dwallit",
+  },
+
+  {
+    image: MinPay,
+    name: "1minutePay App",
+    siteLink: "https://www.1minutepay.com/",
+    githubLink: null,
   },
   {
     image: ZumarocPic,
@@ -87,26 +95,15 @@ const Portfolio = () => {
             {portfolioDetails.map((val, index) => {
               return (
                 <div key={index}>
-                  <div
-                    style={{ backgroundImage: `url(${val.image})` }}
-                    className="portfolio-card"
-                  >
+                  <div style={{ backgroundImage: `url(${val.image})` }} className="portfolio-card">
                     <div className="portfolio-card-overlay">
-                      <a
-                        className="pri-alt-btn me-2"
-                        href={val.githubLink}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        view code
-                      </a>
+                      {val.githubLink !== null && (
+                        <a className="pri-alt-btn me-2" href={val.githubLink} target="_blank" rel="noreferrer">
+                          view code
+                        </a>
+                      )}
 
-                      <a
-                        className="sec-btn"
-                        href={val.siteLink}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
+                      <a className="sec-btn" href={val.siteLink} target="_blank" rel="noreferrer">
                         view site
                       </a>
                     </div>
