@@ -15,7 +15,7 @@ const portfolioDetails = [
   {
     image: Akpego,
     name: "Rabbah (Fintech)",
-    siteLink: "https://dwallit.herokuapp.com",
+    siteLink: "https://fanciful-alpaca-450e58.netlify.app/",
     githubLink: "https://github.com/nerdyeye/dwallit",
   },
 
